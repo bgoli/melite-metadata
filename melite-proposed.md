@@ -12,13 +12,13 @@
 ### More about MELITE
 MELITE uses a restricted set of Markdown as a syntax the subsection, bullet point and url (##, - , []) to defined metadata in a human writable way. Some explanatory notes:
 
-- Sections are defined with **## A single line of text**
+- Sections are defined with `## A single line of text ... `
   - `## Identification`
-- Key, value pairs are defined as a bullet point **-** and sepatated with a **:**
+- Key, value pairs are defined as a bullet point ` - ` and separated with a ` : `
   - `- Title: The MELITE metadata specification`
-- A Key may sometime require a list of values
+- A Key may sometime require a list of values, these are separated with a ` , `
   - `- Creator: Brett G. Olivier , Vrije Universiteit Amsterdam`
-- Optional external identifiers can be linked to a person or organisation using the url syntax **[]**. Note an *is* relationship is implied between the subject text and object URL. For example, in this case we are stating the *Vrije Universiteit Amsterdam is https://ror.org/008xxew50*.
+- Optional external identifiers can be linked to a person or organisation using the url syntax `[hyperlink]`. Note an **is** relationship is implied between the subject text and the object URI/hyperlink. For example, in the case we are stating the **Vrije Universiteit Amsterdam is https://ror.org/008xxew50**.
   - `- Publisher: Vrije Universiteit Amsterdam [https://ror.org/008xxew50]`
 
 All values in *Identifaction* and *Description* are required to be filled in for every dataset or data collection. The sections that follow are optional yet highly recommended, feel free to select those that are relevant to you. The description ends with the definition of one of the optional sections: `## Related identiers`, `## Additional information` or `## End`.
