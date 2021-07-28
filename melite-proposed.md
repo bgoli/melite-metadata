@@ -17,7 +17,7 @@ MELITE uses a restricted set of Markdown as a syntax the subsection, bullet poin
 - Key, value pairs are defined as a bullet point ` - ` and separated with a ` : `
   - `- Title: The MELITE metadata specification`
 - A Key may sometime require a list of values, these are separated with a ` , `
-  - `- Creator: Brett G. Olivier , Vrije Universiteit Amsterdam`
+  - `- Creator: Brett G. Olivier, Vrije Universiteit Amsterdam`
 - Optional external identifiers can be linked to a person or organisation using the url syntax `[hyperlink]`. Note an **is** relationship is implied between the subject text and the object URI/hyperlink. For example, in the case we are stating the **Vrije Universiteit Amsterdam is https://ror.org/008xxew50**.
   - `- Publisher: Vrije Universiteit Amsterdam [https://ror.org/008xxew50]`
 
