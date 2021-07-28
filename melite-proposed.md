@@ -10,7 +10,7 @@
  A general description of a data collection. Be as detailed as you want, you may use almost all Markdown **except the ## subsection** in your *Description*. 
 
 ### More about MELITE
-MELITE uses a restricted set of Markdown as a syntax the subsection, bullet point and url (##, - , []) to defined metadata in a human writable way. Some explanatory notes:
+MELITE uses a restricted set of Markdown as a syntax: the subsection, bullet point, comma and url (`## - , []`) to defined metadata in a human writable way. Some explanatory notes:
 
 - Sections are defined with `## A single line of text ... `
   - `## Identification`
