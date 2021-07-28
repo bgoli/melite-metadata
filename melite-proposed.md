@@ -12,8 +12,12 @@
 ### More about MELITE
 MELITE uses a restricted set of Markdown as a syntax: the subsection, bullet point, comma and url (`## - , []`) to defined metadata in a human writable way. Some explanatory notes:
 
-- Sections are defined with `## A single line of text ... `
+- Sections are defined as a single line of text beginning with `## `. The following sections are defined in MELITE and files must have `## Identification` and `## Description` in that order. Optional section may follow in any order or be left out completely. 
   - `## Identification`
+  - `## Description`
+  - `## Required for publication`
+  - `## Related identiers`
+  - `## Additional information`
 - Key, value pairs are defined as a bullet point ` - ` and separated with a ` : `
   - `- Title: The MELITE metadata specification`
 - A Key may sometime require a list of values, these are separated with a ` , `
@@ -31,6 +35,8 @@ Audiovisual, Book, BookChapter, Collection, ComputationalNotebook, ConferencePap
 ```
 
 See the detailed description of the minimal metadata specification on which MELITE is based here [https://docs.google.com/spreadsheets/d/1YZvXfmtK8FWILDZnYAI2627MFRFGtsth/edit#gid=1666451278]
+
+## Required for publication
 
 ## Related identiers
 
