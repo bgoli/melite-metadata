@@ -42,7 +42,7 @@ Some keys have defined lists of values that they can take, for example **Resourc
 Audiovisual, Book, BookChapter, Collection, ComputationalNotebook, ConferencePaper, ConferenceProceeding, DataPaper, Dataset, Dissertation, Event, Image, InteractiveResource, Model, OutputManagementPlan, PeerReview, PhysicalObject, Preprint, Report, Service, Software, Sound, Standard, Text, Workflow, Other
 ```
 
-See the detailed description of the minimal metadata specification on which MELITE is based here (restricted access) [https://docs.google.com/spreadsheets/d/1YZvXfmtK8FWILDZnYAI2627MFRFGtsth/edit#gid=1666451278].
+See the detailed description of the minimal metadata specification on which MELITE is [based](https://yoda.vu.nl).
 
 ## Required for publication
 - PublicationYear: 2022
