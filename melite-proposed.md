@@ -32,23 +32,36 @@ MELITE uses a restricted set of Markdown syntax: H2, unordered list and link (`#
   - `- CreatorAffiliation: Systems Biology Lab, AIMMS, VU (https://doi.org/10.13039/501100001833)`
 - Optional external identifiers can be linked to a person or organisation using the link syntax `(link URI)`. Note an **is** relationship is implied between the subject text and the object URI/hyperlink. For example, in the case we are stating the **Vrije Universiteit Amsterdam is https://ror.org/008xxew50**.
   - `- Publisher: Vrije Universiteit Amsterdam (https://ror.org/008xxew50)`
+- Some sections such as *Contributors* and *Related Identifiers* use a nested unordered list, where a subitem is defined using two spaces before bullet point `  -`:
+``` 
+- ContributorName: Brett Olivier (https://orcid.org/0000-0002-5293-5321) 
+  - ContributorType: Researcher
+```
 
 All values in *Identifaction* and *Description* are required to be filled in for every dataset or data collection. The section *Required for publication* is optional except if the data collection is being submitted for archiving and/or publication, in which case it is required. The remaining sections are optional, albeit, highly recommended. The *Description* ends with the definition of one of the optional sections or `## End`.
 
+See the detailed description of the minimal metadata specification on which MELITE is [based](https://yoda.vu.nl).
+
 ### Defined value sets
-Some keys have defined lists of values that they can take:
+Certain keys such as *ResourceType*  and *ContributorType* have a defined set of values that they can take:
 
 **ResourceType**: 
 ```text
 Audiovisual, Book, BookChapter, Collection, ComputationalNotebook, ConferencePaper, ConferenceProceeding, DataPaper, Dataset, Dissertation, Event, Image, InteractiveResource, Model, OutputManagementPlan, PeerReview, PhysicalObject, Preprint, Report, Service, Software, Sound, Standard, Text, Workflow, Other
 ```
-ContributorType
+**ContributorType**
 ```text
 ContactPerson, DataCollector, DataCurator, DataManager, Distributor, Editor, HostingInstitution, Producer, ProjectLeader, ProjectManager, ProjectMember, RegistrationAgency, RegistrationAuthority, RelatedPerson, Researcher, ResearchGroup, RightsHolder, Sponsor, Supervisor, WorkPackageLeader, Other
 ```
+**RelatedIdentifierType**
+```text
+ARK, arXiv, bibcode, DOI, EAN13, EISSN, Handle, IGSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID, PURL, UPC, URL, URN, w3id,
+```
 
-
-See the detailed description of the minimal metadata specification on which MELITE is [based](https://yoda.vu.nl).
+**RelationType**
+```text
+IsCitedBy, Cites, IsSupplementTo, IsSupplementedBy, IsContinuedBy, Continues, Describes, IsDescribedBy, HasMetadata, IsMetadataFor, HasVersion, IsVersionOf, IsNewVersionOf, IsPreviousVersionOf, IsPartOf, HasPart, IsPublishedIn, IsReferencedBy, References, IsDocumentedBy, Documents, IsCompiledBy, Compiles, IsVariantFormOf, IsOriginalFormOf, IsIdenticalTo, IsReviewedBy, Reviews, IsDerivedFrom, IsSourceOf, IsRequiredBy, Requires, Obsoletes, IsObsoletedBy
+```
 
 ## Required for publication
 - PublicationYear: 2022
@@ -65,7 +78,15 @@ See the detailed description of the minimal metadata specification on which MELI
   - ContributorAffiliation: Vrije Universiteit Amsterdam
 
 ## Related identiers
-TODO
+- RelatedIdentifier: 10.14454/3w3z-sa82 (https://doi.org/10.14454/3w3z-sa82)
+  - relatedIdentifierType: DOI
+  - relationType: IsDerivedFrom
+- RelatedIdentifier: 10.14454/3w3z-sa82
+  - relatedIdentifierType: DOI
+  - relationType: IsVariantFormOf
+- RelatedIdentifier: Document URL (https://github.com/vu-rdm-tech/melite-metadata/blob/main/melite-proposed.md)
+  - relatedIdentifierType: URL
+  - relationType: IsIdenticalTo
 
 ## Optional information
 - AlternateIdentifier: GitHub project (https://github.com/vu-rdm-tech/melite-metadata/)
@@ -76,10 +97,5 @@ TODO
 - RelatedItem: This forms part of the documentation series written by Brett and Peter.
 
 ## End
-
-Random stuff I am storing here that will probably be deleted
-This was in an earlier version but I have dropped the list concept due to the increased issues introduced by separator tokens.
-- A Key may sometime require a list of values, these are separated with a ` , `
-  - `- Creator: Brett G. Olivier, Vrije Universiteit Amsterdam`
 
 (C) Brett G. Olivier, Vrije Universiteit Amsterdam, Amsterdam, The Netherlands, 2021.
