@@ -36,22 +36,33 @@ MELITE uses a restricted set of Markdown syntax: H2, unordered list and link (`#
 All values in *Identifaction* and *Description* are required to be filled in for every dataset or data collection. The section *Required for publication* is optional except if the data collection is being submitted for archiving and/or publication, in which case it is required. The remaining sections are optional, albeit, highly recommended. The *Description* ends with the definition of one of the optional sections or `## End`.
 
 ### Defined value sets
-Some keys have defined lists of values that they can take, for example **ResourceType** must be one of: 
+Some keys have defined lists of values that they can take:
 
+**ResourceType**: 
 ```text
 Audiovisual, Book, BookChapter, Collection, ComputationalNotebook, ConferencePaper, ConferenceProceeding, DataPaper, Dataset, Dissertation, Event, Image, InteractiveResource, Model, OutputManagementPlan, PeerReview, PhysicalObject, Preprint, Report, Service, Software, Sound, Standard, Text, Workflow, Other
 ```
+ContributorType
+```text
+ContactPerson, DataCollector, DataCurator, DataManager, Distributor, Editor, HostingInstitution, Producer, ProjectLeader, ProjectManager, ProjectMember, RegistrationAgency, RegistrationAuthority, RelatedPerson, Researcher, ResearchGroup, RightsHolder, Sponsor, Supervisor, WorkPackageLeader, Other
+```
+
 
 See the detailed description of the minimal metadata specification on which MELITE is [based](https://yoda.vu.nl).
 
 ## Required for publication
 - PublicationYear: 2022
 - Size: 20 kB
-- Subject: metadata, datacite, VU minimal metadata definitions
-- Identifier: DOI (DOI)
+- Subject: metadata datacite "VU minimal metadata"
+- Identifier: DOI (URI)
 
 ## Contributors
-TODO
+- ContributorName: Brett G. Olivier (https://orcid.org/0000-0002-5293-5321)
+  - ContributorType: Researcher
+  - ContributorAffiliation: Vrije Universiteit Amsterdam (https://ror.org/008xxew50)
+- ContributorName: Peter Vos
+  - ContributorType: Project Member
+  - ContributorAffiliation: Vrije Universiteit Amsterdam
 
 ## Related identiers
 TODO
