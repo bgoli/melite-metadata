@@ -74,7 +74,7 @@ IsCitedBy, Cites, IsSupplementTo, IsSupplementedBy, IsContinuedBy, Continues, De
   - ContributorType: Researcher
   - ContributorAffiliation: Vrije Universiteit Amsterdam (https://ror.org/008xxew50)
 - ContributorName: Peter Vos
-  - ContributorType: Project Member
+  - ContributorType: ProjectMember
   - ContributorAffiliation: Vrije Universiteit Amsterdam
 
 ## Related identiers
