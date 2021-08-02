@@ -6,7 +6,7 @@
 - Publisher: Vrije Universiteit Amsterdam (https://ror.org/008xxew50)
 - ResourceType: Dataset
 - Rights: CC0 1.0 Universal
-- Version: 0.3 alpha
+- Version: 0.5 alpha
 
 ## Description
 ### More about the description
