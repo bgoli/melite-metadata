@@ -1,12 +1,14 @@
 ## Identification
 - Title: The MELITE metadata specification
-- Creator: Brett G. Olivier (https://orcid.org/0000-0002-5293-5321)
-- CreatorAffiliation: Systems Biology Lab, AIMMS, VU (https://doi.org/10.13039/501100001833)
-- Date: 2021-07-28 
-- Publisher: Vrije Universiteit Amsterdam (https://ror.org/008xxew50)
+- Date: 2021-07-21 2021-07-28
 - ResourceType: Dataset
 - Rights: CC0 1.0 Universal
-- Version: 0.5 alpha
+- Version: 0.6 alpha
+
+## Creator
+- Creator: Brett G. Olivier (https://orcid.org/0000-0002-5293-5321)
+  - CreatorAffiliation: Vrije Universiteit Amsterdam (https://ror.org/008xxew50)
+  - CreatorAffiliation: Systems Biology Lab, AIMMS
 
 ## Description
 ### More about the description
@@ -17,6 +19,7 @@ MELITE uses a restricted set of Markdown syntax: H2, unordered list and link (`#
 
 - Sections are defined as a single line of text beginning with `## `. All MELITE metadata files must, at least, include:
   - `## Identification`
+  - `## Creator`
   - `## Description`
 - Optional section that is required for data publication or archiving:
   - `## Required for publication`
@@ -37,6 +40,13 @@ MELITE uses a restricted set of Markdown syntax: H2, unordered list and link (`#
 - ContributorName: Brett Olivier (https://orcid.org/0000-0002-5293-5321) 
   - ContributorType: Researcher
 ```
+- Affiliation keys, *CreatorAffiliation*, *ContributorAffiliation* are special in that they can occur one or more times for each each associated:
+```
+- Creator: Brett Olivier
+  - CreatorAffiliation: Vrije Universiteit Amsterdam (https://ror.org/008xxew50)
+  - CreatorAffiliation: Systems Biology Lab, AIMMS
+``
+
 
 All values in *Identifaction* and *Description* are required to be filled in for every dataset or data collection. The section *Required for publication* is optional except if the data collection is being submitted for archiving and/or publication, in which case it is required. The remaining sections are optional, albeit, highly recommended. The *Description* ends with the definition of one of the optional sections or `## End`.
 
@@ -64,6 +74,7 @@ IsCitedBy, Cites, IsSupplementTo, IsSupplementedBy, IsContinuedBy, Continues, De
 ```
 
 ## Required for publication
+- Publisher: Vrije Universiteit Amsterdam (https://ror.org/008xxew50)
 - PublicationYear: 2022
 - Size: 20 kB
 - Subject: metadata datacite "VU minimal metadata"
