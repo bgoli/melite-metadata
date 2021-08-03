@@ -101,11 +101,12 @@ IsCitedBy, Cites, IsSupplementTo, IsSupplementedBy, IsContinuedBy, Continues, De
 
 ## Optional information
 - AlternateIdentifier: GitHub project (https://github.com/vu-rdm-tech/melite-metadata/)
-- Format: UTF-8
 - FundingReference: NWO DCC (https://www.nwo.nl/en/calls/local-digital-compentence-centres)
 - GeoLocation: 52.335169, 4.861827
 - Language: en
 - RelatedItem: This forms part of the documentation series written by Brett and Peter.
+- Format: text/markdown
+- Format: MD 
 
 ## End
 
