@@ -24,7 +24,7 @@ MELITE uses a restricted set of Markdown syntax: H2, unordered list and link (`#
   - `## Contributors`
   - `## Related identiers`
   - `## Optional information`
-- Optional file end token indicating the end of the MELITE metadata definition.
+- Optional file end token indicating the end of the MELITE metadata definition, which allows arbitrary information to be stored after the end token.
   - `## End`
 - Key-value pairs are defined as a line that begins with a bullet point ` - ` the key and a ` : ` with everything to the right until the end of the line  interpreted as the value (`- Key: value`):
   - `- Title: The MELITE metadata specification`
@@ -94,7 +94,6 @@ IsCitedBy, Cites, IsSupplementTo, IsSupplementedBy, IsContinuedBy, Continues, De
 - FundingReference: NWO DCC (https://www.nwo.nl/en/calls/local-digital-compentence-centres)
 - GeoLocation: 52.335169, 4.861827
 - Language: en
-- RelatedItem: This forms part of the documentation series written by Brett and Peter.
 
 ## End
 
